@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Box - Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="loader-logo">PIZZA BOX</h1>
+            <div class="pizza-circle">
+                <img src="images/pizza.png" alt="Rotating Pizza">
+            </div>
+            <h2 class="loader-welcome">Welcome to Pizza Box Website</h2>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#home" class="logo">pizza box.</a>
+<div class="search-container text-center mt-2">
+    <input type="text" id="searchInput" placeholder="Search your favorite pizza..." class="search-input">
+    
+</div>
+            <ul class="navlist flex gap-3">
+                <li><a href="#home">home</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#service">service</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#contacts">contacts</a></li>
+            </ul>
+
+          <div class="desktop flex gap-2">
+    <a href="javascript:void(0)" class="cart-icon">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart">0</span>
+    </a>
+
+    <div id="authWrapper" class="flex">
+        <a href="javascript:void(0)" class="btn" id="openAuth">
+            sign in &nbsp; <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </a>
+    </div>
+
+    <a href="javascript:void(0)" class="humbarger">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+</div>
+
+            <ul class="mobile-menu">
+                <li><a href="#home">home</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#service">service</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#contacts">contacts</a></li>
+                <li><a href="#contacts" class="btn">sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-overlay"></div>
+    <main>
+        <section class="hero-section flex wrapper gap-4" id="home" data-aos="fade-up">
+            <div class="content">
+                <h1>Enjoy your Delicious <span>food</span></h1>
+                <p class="para">Experience the best pizza in town delivered right to your doorstep.</p>
+                <a href="#menu" class="btn">order now</a>
+            </div>
+            <div class="imge-container">
+                <img src="images/delivery-boy.png" width="400" alt="Delivery Boy">
+            </div>
+        </section>
+
+        <section class="wrapper p-top mt-4" id="service" data-aos="flip-left">
+            <div class="text-center">
+                <h5>our services</h5>
+                <h2>how does it work</h2>
+            </div>
+            <div class="flex text-center gap-4 mt-4">
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="images/easy-to-order.png" alt="Easy Order">
+                    </div>
+                    <h3>easy-to-order</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="images/best-quality.png" alt="Best Quality">
+                    </div>
+                    <h3>best quality</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="images/fast-delivery.png" alt="Fast Delivery">
+                    </div>
+                    <h3>fast delivery</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper p-top" id="menu" data-aos="fade-right">
+            <div class="category-filter text-center" style="margin-bottom: 30px;">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="cool drinks">Cool Drinks</button>
+                <button class="filter-btn" data-category="coffee">Coffee</button>
+                <button class="filter-btn" data-category="fastfood">Fastfood</button>
+                <button class="filter-btn" data-category="chineese food">Chineese Food</button>
+            </div>
+            <div class="text-center">
+                <h5>our Menu</h5>
+                <h2>the most popular</h2>
+            </div>
+            <div class="card-list flex mt-4 gap-2">
+                <!-- <div class="order-card text-center">
+                    <div class="card-image">
+                        <img src="images/burger.png" alt="Double Beef Burger">
+                    </div>
+                    <h4>double beef burger</h4>
+                    <h4 class="price">$200</h4>
+                    <a href="#" class="btn">ADD TO CART</a>
+                </div>-->
+            </div>
+        </section>
+
+        <div class="cart-tab" data-aos="fade-up">
+            <h3>Your Cart</h3>
+            <div class="cart-list">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="images/burger.png" width="200" alt="Double Beef Burger">
+                    </div>
+
+                    <div class="item-details">
+                        <h4>Double Beef Burger</h4>
+                        <h4 class="item-total">$200</h4>
+                    </div>
+                    <div class="item-quantity flex">
+                        <a href="#" class="quantity-btn"><i class="fa-solid fa-minus"></i></a>
+                        <h4 class="quantity-value">1</h4>
+                        <a href="#" class="quantity-btn"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="total-container">
+                <h4>Total:</h4>
+                <h4 class="cart-total">$0.00</h4>
+            </div>
+            <div class="btn-container flex gap-2">
+                <a href="#" class="btn close-btn">Close</a>
+                <a href="#" class="btn checkout-btn">Checkout</a>
+            </div>
+        </div>
+
+        <section class="wrapper p-top flex gap-3" id="about us">
+            <div class="img-container">
+                <img src="images/delivery-boy-with-phone.png" width="400" alt="Delivery App">
+            </div>
+            <div class="review-container">
+                <h5>Our Reviews</h5>
+                <h2>What They Say</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex gap-2">
+                                <div class="profile">
+                                    <img src="images/profile1.jpeg" width="80" alt="Guy Hawkins">
+                                </div>
+                                <div>
+                                    <h4>Guy Hawkins</h4>
+                                    <div class="mt-half">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="para">Best pizza in town! Fast delivery and hot food.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex gap-2">
+                                <div class="profile">
+                                    <img src="images/profile2.jpeg" width="80" alt="Jane Doe">
+                                </div>
+                                <div>
+                                    <h4>Jane Doe</h4>
+                                    <div class="mt-half">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="para">The quality of the ingredients is amazing. Highly recommended!</p>
+                        </div>
+                    </div>
+
+                    <div class="flex between mt-4">
+                        <a href="javascript:void(0)" class="arrow" id="prevBtn"><i
+                                class="fa-solid fa-arrow-left"></i></a>
+                        <a href="javascript:void(0)" class="arrow" id="nextBtn"><i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+        </section>
+
+        <section class="wrapper p-top" id="about" data-aos="flip-left">
+            <div class="app-container flex gap-3">
+                <div class="app-imge">
+                    <img src="images/mobile-app (1).png" width="250" alt="Mobile App">
+                </div>
+                <div class="content">
+                    <h5>our application</h5>
+                    <h2>simple way to<br> order your food</h2>
+                    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, consequuntur.</p>
+                    <a href="#" class="btn">get the app</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper p-top text-center " id="#contacts" data-aos="zoom-in-up">
+            <h5>our subscribe</h5>
+            <h2>subscribe to our newsletter</h2>
+            <p class="para m-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="input-container flex m-auto mt-4" style="max-width: 500px;">
+                <input type="email" placeholder="Enter your email"
+                    style="flex: 1; padding: 1rem; border-radius: 1rem 0 0 1rem; border: 1px solid #ccc;">
+                <a href="#" class="btn" style="border-radius: 0 1rem 1rem 0;">subscribe</a>
+            </div>
+        </section>
+    </main>
+<div id="exitPopup" class="exit-modal">
+    <div class="exit-content">
+        <span id="closeExit" class="close">&times;</span>
+        <h2>WAIT! 🍕</h2>
+        <p>Don't leave hungry! Subscribe now and get <b>20% OFF</b> on your first order.</p>
+        <input type="email" placeholder="Enter your email">
+        <button class="btn">Claim My Discount</button>
+    </div>
+</div>
+    <footer>
+        <div class="footer-container wrapper p-top">
+            <div class="flex between gap-4">
+                <div class="footer-wrapper">
+                    <a href="#" class="logo">pizza box.</a>
+                    <p class="mt-one-half">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <ul class="footer-wrapper">
+                    <li>
+                        <h4>Our Menu</h4>
+                    </li>
+                    <li class="mt-one-half"><a href="#">Special</a></li>
+                    <li class="mt-one-half"><a href="#">Popular</a></li>
+                </ul>
+                <ul class="footer-wrapper">
+                    <li>
+                        <h4>Company</h4>
+                    </li>
+                    <li class="mt-one-half"><a href="#">About Us</a></li>
+                    <li class="mt-one-half"><a href="#">FAQs</a></li>
+                </ul>
+                <ul class="footer-wrapper">
+                    <li>
+                        <h4>Support</h4>
+                    </li>
+                    <li class="mt-one-half"><a href="#">Account</a></li>
+                    <li class="mt-one-half"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+   <div class="payment-modal" id="paymentModal">
+        <div class="modal-content">
+            <h3>Payment Details</h3>
+            <form id="paymentForm">
+                <div class="input-group">
+                    <label>Address</label>
+                    <input type="text" required placeholder="123 Street, City">
+                </div>
+                <div class="input-group">
+                    <label>Phone</label>
+                    <input type="tel" required placeholder="03xx-xxxxxxx">
+                </div>
+                <div class="total-pay">
+                    <span>Total:</span>
+                    <span id="modalTotal">$0.00</span>
+                </div>
+                <div class="modal-btns flex gap-2">
+                    <button type="button" class="btn" id="closeModal" style="background:#eee; color:#333">Cancel</button>
+                    <button type="submit" class="btn pay-btn">Confirm Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div id="invoice-box" style="display: none;">
+        <div style="text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px;">
+            <h1>Pizza Box.</h1>
+            <p>Order Receipt</p>
+        </div>
+        <div id="invoice-details" style="margin-top: 20px;"></div>
+        <div style="border-top: 2px solid #333; margin-top: 20px; padding-top: 10px; text-align: right;">
+            <h3 id="invoice-total"></h3>
+        </div>
+        <p style="text-align: center; margin-top: 30px;">Thank you for ordering!</p>
+    </div>
+    <div id="authModal" class="auth-overlay" style="display: none;">
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2 id="authTitle">Create Account</h2>
+            <p id="authSubtitle">Join Pizza Box to track your orders!</p>
+            
+            <form id="authForm">
+                <div class="input-group" id="nameField">
+                    <label><i class="fa-solid fa-user"></i> Full Name</label>
+                    <input type="text" id="userName" placeholder="John Doe">
+                </div>
+                <div class="input-group">
+                    <label><i class="fa-solid fa-envelope"></i> Email Address</label>
+                    <input type="email" id="userEmail" required placeholder="example@mail.com">
+                </div>
+                <div class="input-group">
+                    <label><i class="fa-solid fa-lock"></i> Password</label>
+                    <input type="password" id="userPass" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn auth-btn" id="submitBtn">Sign Up</button>
+            </form>
+            
+            <p class="auth-toggle">
+                <span id="toggleText">Already have an account?</span> 
+                <a href="javascript:void(0)" id="toggleAuth">Sign In</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div id="historyModal" class="modal" style="display:none; position:fixed; z-index:10000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
+    <div style="background:white; padding:20px; border-radius:15px; width:90%; max-width:500px; max-height:80vh; overflow-y:auto;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+            <h2 style="color:#212121;">My Order History</h2>
+            <span id="closeHistory" style="cursor:pointer; font-size:24px; font-weight:bold;">&times;</span>
+        </div>
+        <div id="historyContent">
+            </div>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

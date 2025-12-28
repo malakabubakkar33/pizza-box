@@ -1,0 +1,29 @@
+[
+    { "id": 1, "name": "Double Beef Burger", "price": "$9.67", "image": "images/burger.png", "category": "fastfood" },
+    { "id": 2, "name": "Veggie Pizza", "price": "$10.99", "image": "images/pizza.png", "category": "fastfood" },
+    { "id": 3, "name": "Fried Chicken", "price": "$13.45", "image": "images/fried-chicken.png", "category": "fastfood" },
+    { "id": 4, "name": "Chicken Roll", "price": "$7.50", "image": "images/chicken-roll.png", "category": "fastfood" },
+    { "id": 5, "name": "Sub Sandwich", "price": "$6.99", "image": "images/sandwich.png", "category": "fastfood" },
+    { "id": 6, "name": "Cheese Burger", "price": "$5.45", "image": "images/cheese-burger.png", "category": "fastfood" },
+
+    { "id": 7, "name": "Chicken Chowmein", "price": "$7.65", "image": "images/chowmein.png", "category": "chineese food" },
+    { "id": 8, "name": "Spring Roll", "price": "$9.31", "image": "images/spring-roll.png", "category": "chineese food" },
+    { "id": 9, "name": "Egg Fried Rice", "price": "$12.50", "image": "images/fried-rice.png", "category": "chineese food" },
+    { "id": 10, "name": "Manchurian", "price": "$14.00", "image": "images/manchurian.png", "category": "chineese food" },
+    { "id": 11, "name": "Hot & Sour Soup", "price": "$6.50", "image": "images/soup.png", "category": "chineese food" },
+    { "id": 12, "name": "Dumplings", "price": "$10.00", "image": "images/dumplings.png", "category": "chineese food" },
+
+    { "id": 13, "name": "Cappuccino", "price": "$4.50", "image": "images/cappuccino.png", "category": "coffee" },
+    { "id": 14, "name": "Iced Latte", "price": "$5.20", "image": "images/latte.png", "category": "coffee" },
+    { "id": 15, "name": "Espresso", "price": "$3.00", "image": "images/espresso.png", "category": "coffee" },
+    { "id": 16, "name": "Mocha Coffee", "price": "$6.00", "image": "images/mocha.png", "category": "coffee" },
+    { "id": 17, "name": "Cold Coffee", "price": "$5.50", "image": "images/cold-coffee.png", "category": "coffee" },
+    { "id": 18, "name": "Caramel Macchiato", "price": "$7.00", "image": "images/macchiato.png", "category": "coffee" },
+
+    { "id": 19, "name": "Coca Cola", "price": "$1.50", "image": "images/coke.png", "category": "cool drinks" },
+    { "id": 20, "name": "Fresh Lime", "price": "$2.50", "image": "images/lime.png", "category": "cool drinks" },
+    { "id": 21, "name": "Mango Shake", "price": "$4.00", "image": "images/mango-shake.png", "category": "cool drinks" },
+    { "id": 22, "name": "Blue Lagoon", "price": "$5.00", "image": "images/blue-lagoon.png", "category": "cool drinks" },
+    { "id": 23, "name": "Orange Juice", "price": "$3.50", "image": "images/orange.png", "category": "cool drinks" },
+    { "id": 24, "name": "Mineral Water", "price": "$1.00", "image": "images/water.png", "category": "cool drinks" }
+]
